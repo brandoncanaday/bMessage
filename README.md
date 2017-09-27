@@ -2,6 +2,8 @@
 
 _Realtime chat web app using `Node.js` and `Socket.io` package._
 
+__See it live, [here](https://bmessage-socket-io.herokuapp.com/).__
+
 ### Current Features
 
 - `User is typing ...` functionality
