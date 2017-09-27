@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="/animate.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/addtohomescreen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="bMessage">
+  </head>
+  <body>
+    <ul id="notifications"></ul>
+    <span class="notification"></span>
+    <header></header>
+    <section id="messages-container">
+      <ul id="messages"></ul>
+    </section>
+    <form id="send-message" action="">
+      <input id="m" autocomplete="off" placeholder="bMessage"/><button>Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/jquery-3.2.1.min.js"></script>
+    <script src="/main.js"></script>
+    <script src="/addtohomescreen.js"></script>
+    <script>
+      addToHomescreen({
+        startDelay: 3,
+        skipFirstVisit: true,
+        icon: true,
+        maxDisplayCount: 1
+      });
+    </script>
+  </body>
+</html>
